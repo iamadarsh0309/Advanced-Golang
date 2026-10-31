@@ -21,7 +21,7 @@ func main() {
 
 	wg := sync.WaitGroup{}
 
-	ch := make(chan *Message,2)
+	ch := make(chan *Message, 2)
 
 	wg.Add(2)
 
@@ -38,6 +38,9 @@ func main() {
 	// log.Println(friends)
 
 	log.Println(time.Since(now))
+
+	printPointer()
+	inventory()
 
 }
 
